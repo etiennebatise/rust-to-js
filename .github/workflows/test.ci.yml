@@ -7,6 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # - run: echo ${{ join(toJSON(github.event.action), '') }}
-      - run: echo ${{ github.event.pull_request.requested_reviewer[0].login }}
+      - run: echo ${{ github.event.pull_request.requested_reviewers[0].login }}
       # - run: echo ${{ join(toJSON(github.event), '') }}
       # - run: echo ${{ toJSON(github.event.pull_request) }}
