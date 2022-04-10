@@ -7,3 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo ${{ github.event.action }}
+      - run: echo "============================"
+      - run: echo ${{ github.event }}
+      - run: echo "============================"
+      - run: echo ${{ github.event.pull_request }}
