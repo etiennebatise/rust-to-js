@@ -8,6 +8,6 @@ jobs:
     steps:
       - run: echo ${{ toJSON(github.event.action) }}
       - run: echo "============================"
-      - run: echo ${{ toJSON(github.event) }}
+      - run: echo ${{ join(toJSON(github.event), '') }}
       - run: echo "============================"
       - run: echo ${{ toJSON(github.event.pull_request) }}
